@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle2, Circle, Share, Download, Beaker } from "lucide-react";
 import { toPng } from "html-to-image";
-
+import "./globals.css";
 // --- Constants & Data ---
 const SEASONS = [
   { id: 1, episodes: 7 },
