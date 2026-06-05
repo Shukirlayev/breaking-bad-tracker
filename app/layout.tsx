@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./global.css";
+import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], display: 'swap' });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Breaking Bad | Tracker",
-  description: "Premium tracking and export for Breaking Bad",
+  title: "Breaking Bad Tracker",
+  description: "Track your purity level. No half measures.",
+  themeColor: "#050505",
 };
 
 export default function RootLayout({
@@ -15,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en">
       <body className={inter.className}>{children}</body>
     </html>
   );
